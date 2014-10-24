@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="lib/api.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/Bill Bek/IBM/CodeRally/workspace/Code Rally Vehicles/lib/docs.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/jbox2d-library-2.1.2.2-javadoc.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/Bill Bek/IBM/CodeRally/workspace/Code Rally Vehicles/lib/docs.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/CodeRally.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/Bill Bek/IBM/CodeRally/workspace/Code Rally Vehicles/lib/docs.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/jbox2d-library-2.1.2.2-modified-2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/Bill Bek/IBM/CodeRally/workspace/Code Rally Vehicles/lib/docs.jar!/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
