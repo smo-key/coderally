@@ -1,0 +1,8 @@
+{
+   "name": "plane_red",
+   "acceleration":"250",
+   "weight":"250",
+   "armor":"0",
+   "traction":"0",
+   "turning":"250"
+}

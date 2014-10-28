@@ -1,0 +1,14 @@
+{
+   "name":"oil_spill",
+   "surface":"com.ibm.coderally.track.surface.types.OilSurface",
+   "scale":"2.0",
+   "images":[
+      "/obstacles/oil_spill/oil_spilling1.png",
+      "/obstacles/oil_spill/oil_spilling2.png",
+      "/obstacles/oil_spill/oil_spilling3.png"
+   ],
+   "type":"soft",
+   "placement":[
+       {"x_offset":"0", "y_offset":"0"}
+   ]
+}

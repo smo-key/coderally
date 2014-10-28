@@ -1,0 +1,18 @@
+{
+   "name":"cockroach",
+   "scale":"0.65",
+   "images":[
+      "/obstacles/cockroach/cockroach.png",
+      "/obstacles/cockroach/cockroach_90.png",
+      "/obstacles/cockroach/cockroach_180.png",
+      "/obstacles/cockroach/cockroach_270.png",
+      "/obstacles/cockroach/cockroach_small.png"
+   ],
+   "type":"aabb",
+   "placement":[
+      {
+         "x_offset":"0",
+         "y_offset":"0"
+      }
+   ]
+}

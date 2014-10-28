@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.jbox2d.common.Vec2"/>
+<fullyQualifiedTypeName name="com.ibm.coderally.entity.cars.agent.Car"/>
+<fullyQualifiedTypeName name="com.ibm.coderally.track.Race"/>
+<fullyQualifiedTypeName name="com.ibm.coderally.geo.agent.CheckPoint"/>
+<fullyQualifiedTypeName name="com.ibm.coderally.api.CodeRallyOptions"/>
+<fullyQualifiedTypeName name="com.ibm.coderally.agent.CRSFileLog"/>
+<fullyQualifiedTypeName name="com.ibm.coderally.api.agent.AIUtils"/>
+<fullyQualifiedTypeName name="com.ibm.coderally.geo.agent.Point"/>
+<fullyQualifiedTypeName name="com.ibm.coderally.geo.agent.Rotation"/>
+<fullyQualifiedTypeName name="com.ibm.coderally.track.agent.Track"/>
+</qualifiedTypeNameHistroy>

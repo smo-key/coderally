@@ -1,0 +1,124 @@
+import org.jbox2d.common.Vec2;
+
+import com.ibm.coderally.agent.CRSFileLog;
+import com.ibm.coderally.api.agent.AIUtils;
+import com.ibm.coderally.entity.cars.agent.Car;
+import com.ibm.coderally.entity.cars.agent.RaceCarAgentAI;
+import com.ibm.coderally.geo.agent.CheckPoint;
+import com.ibm.coderally.geo.agent.Point;
+import com.ibm.coderally.geo.agent.Rotation;
+import com.ibm.coderally.track.agent.Track;
+
+
+public class IonUtils {
+	
+	public static double distance(Point a, Point b)
+	{
+		return Math.sqrt(Math.pow(b.getX() - a.getX(), 2) + (Math.pow(b.getY() - a.getY(), 2)));
+	}
+	
+	public static double angle(Point a, Point b)
+	{
+		double angle = Math.atan2(b.getY() - a.getY(), b.getX() - a.getX()) * 180 / Math.PI;
+		return Math.abs(angle);
+	}
+	public static double angle(Vec2 a)
+	{
+		double angle = Math.atan2(a.y, a.x) * 180 / Math.PI;
+		return Math.abs(angle);
+	}
+	
+	public static double cpdist(Point pos, Rotation rot, CheckPoint checkpoint)
+	{
+		return Math.min(pos.getDistanceSquared(checkpoint.getIntersectionPoint(rot, pos)), pos.getDistanceSquared(checkpoint.getCenter()));
+	}
+	
+	public static Point getClosestLane(CheckPoint point, Point pos) {
+		//Factors in only position
+		//How about rotation?
+		Point startMid = point.getCenter().midpoint(point.getStart());
+		Point endMid = point.getCenter().midpoint(point.getEnd());
+
+		if (pos.getDistanceSquared(endMid) < pos.getDistanceSquared(startMid)) {
+			if (pos.getDistanceSquared(point.getCenter()) < pos.getDistanceSquared(endMid)) {
+				return point.getCenter();
+			} else {
+				return endMid;
+			}
+		} else if (pos.getDistanceSquared(point.getCenter()) < pos.getDistanceSquared(startMid)) {
+			return point.getCenter();
+		} else {
+			return startMid;
+		}
+	}
+	
+	/** Get a moving "average" based on the list of checkpoints **/
+	public static CheckPoint getNextCheckpoint(Track track, CheckPoint p, int getnexttimes) {
+		int index = 0;
+		
+		for(CheckPoint cp : track.getCheckpoints()) {
+			if(cp.equals(p)) {
+				break;
+			}
+			index++;
+		}
+		
+		for (int i=0; i < getnexttimes; i++)
+		{
+			index++;
+			if (!(index < track.getCheckpoints().size()))
+			{ index = 0; }
+		}
+		
+		return track.getCheckpoints().get(index);
+	}
+	
+	public static void recalculateHeading(Car mCar, Point target, double bias) {
+		
+		//Predicts how far the car can turn in 1 second
+		double turn = Math.abs(mCar.calculateHeading(target));
+		double degreesPerSecond = mCar.getAttributes().getTurningDegrees();
+		
+		//Predicts how many seconds to reach the checkpoint
+		double distance = mCar.getPosition().getDistance(target);
+		double predictedVelocity = Math.pow(Math.sqrt(AIUtils.magnitude(mCar.getVelocity())) + Math.sqrt(AIUtils.magnitude(mCar.getAcceleration())), 2.4F) / 7;
+		double seconds = distance / (predictedVelocity * 5280 / 3600);
+
+		//Adjust the time according to the bias
+		seconds *= bias;
+		
+		//Predicts how many degrees the car can turn in the time to reach the checkpoint
+		double predictedTurn = degreesPerSecond * seconds;
+
+		//if turn rate is greater than k times the predicted turn, slow down / speed up
+		
+		if (predictedTurn * 7 < turn) {
+			mCar.setBrakePercent(100);
+			mCar.setAccelerationPercent(0);
+		} else if (predictedTurn * 6 < turn) {
+			mCar.setBrakePercent(80);
+			mCar.setAccelerationPercent(0);
+		} else if (predictedTurn * 5 < turn) {
+			mCar.setBrakePercent(60);
+		} else if (predictedTurn * 4 < turn) {
+			mCar.setBrakePercent(40);
+			mCar.setAccelerationPercent(0);
+		} else if (predictedTurn * 3 < turn) {
+			mCar.setBrakePercent(20);
+			mCar.setAccelerationPercent(0);
+		} else if (predictedTurn * 2 < turn) {
+			mCar.setAccelerationPercent(20);
+			mCar.setBrakePercent(0);
+		} else if  (predictedTurn * 1.5 < turn) {
+			mCar.setAccelerationPercent(50);
+			mCar.setBrakePercent(0);
+		} else if  (predictedTurn < turn) {
+			mCar.setAccelerationPercent(70);
+			mCar.setBrakePercent(0);
+		} else {
+			mCar.setAccelerationPercent(100);
+			mCar.setBrakePercent(0);
+		}
+	}
+	
+}

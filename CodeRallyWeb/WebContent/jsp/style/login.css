@@ -1,0 +1,47 @@
+body {
+	font-family: "Arial", Courier, monospace ;
+}
+
+h1 {
+	font-family: "Arial", Courier, monospace ;
+	font-size:  24pt;
+	font-variant:small-caps;
+	color: white;
+	background: #003EB5;
+	text-align: center;
+	width: 910px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#top-banner {
+	background-color:white;
+	border-bottom: solid 1px black;
+	height: 172px;
+	width: 910px;
+	padding-left:0px;
+	margin-left:0px;
+	margin-left:auto; 
+	margin-right: auto;
+}
+
+div#banner-img {
+	width:910px;
+	height:172px;
+	overflow:hidden;
+}
+
+div#button-holder {
+	text-align: center;
+	background: #003EB5;
+	margin-left: auto;
+	margin-right: auto;
+	width: 910px;
+}
+
+div#container {
+	background: none repeat scroll 0 0 #003EB5;
+	width: 910px;
+	margin-left: auto;
+	margin-right: auto;
+}

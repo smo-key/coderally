@@ -1,0 +1,12 @@
+{
+   "name":"blimp",
+   "scale":"1.0",
+   "images":[
+      "/obstacles/blimp/blimp.png"
+   ],
+   "object_path":"/obstacles/blimp/object.json",
+   "type":"blimp",
+   "placement":[
+       {"x_offset":"0", "y_offset":"0"}
+   ]
+}

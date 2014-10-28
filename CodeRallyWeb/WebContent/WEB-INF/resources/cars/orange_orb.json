@@ -1,0 +1,8 @@
+{
+   "name": "orange_orb",
+   "acceleration":"100",
+   "weight":"200",
+   "armor":"0",
+   "traction":"100",
+   "turning":"5000"
+}

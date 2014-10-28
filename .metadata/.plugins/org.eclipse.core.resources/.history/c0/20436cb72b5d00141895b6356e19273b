@@ -1,0 +1,49 @@
+import org.jbox2d.common.Vec2;
+
+import com.ibm.coderally.entity.cars.agent.Car;
+import com.ibm.coderally.geo.agent.CheckPoint;
+import com.ibm.coderally.geo.agent.Point;
+import com.ibm.coderally.geo.agent.Rotation;
+
+
+public class IonUtils {
+	
+	public static double distance(Point a, Point b)
+	{
+		return Math.sqrt(Math.pow(b.getX() - a.getX(), 2) + (Math.pow(b.getY() - a.getY(), 2)));
+	}
+	
+	public static double angle(Point a, Point b)
+	{
+		double angle = Math.atan2(b.getY() - a.getY(), b.getX() - a.getX()) * 180 / Math.PI;
+		return Math.abs(angle);
+	}
+	public static double angle(Vec2 a)
+	{
+		double angle = Math.atan2(a.y, a.x) * 180 / Math.PI;
+		return Math.abs(angle);
+	}
+	
+	public static double cpdist(Point pos, Rotation rot, CheckPoint checkpoint)
+	{
+		return Math.min(pos.getDistanceSquared(checkpoint.getIntersectionPoint(rot, pos)), pos.getDistanceSquared(checkpoint.getCenter()));
+	}
+	
+	public static Point getClosestLane(CheckPoint point, Point pos) {
+		Point startMid = point.getCenter().midpoint(point.getStart());
+		Point endMid = point.getCenter().midpoint(point.getEnd());
+
+		if (pos.getDistanceSquared(endMid) < pos.getDistanceSquared(startMid)) {
+			if (pos.getDistanceSquared(point.getCenter()) < pos.getDistanceSquared(endMid)) {
+				return point.getCenter();
+			} else {
+				return endMid;
+			}
+		} else if (pos.getDistanceSquared(point.getCenter()) < pos.getDistanceSquared(startMid)) {
+			return point.getCenter();
+		} else {
+			return startMid;
+		}
+	}
+	
+}

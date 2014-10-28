@@ -1,0 +1,8 @@
+{
+   "name": "orange_spaceship",
+   "acceleration":"100",
+   "weight":"0",
+   "armor":"100",
+   "traction":"100",
+   "turning":"1000"
+}

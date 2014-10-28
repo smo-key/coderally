@@ -1,0 +1,11 @@
+{
+   "name":"alien",
+   "scale":"1.0",
+   "images":[
+      "/obstacles/alien/space_invader.png"
+   ],
+   "type":"vortex",
+   "placement":[
+       {"x_offset":"0", "y_offset":"0"}
+   ]
+}

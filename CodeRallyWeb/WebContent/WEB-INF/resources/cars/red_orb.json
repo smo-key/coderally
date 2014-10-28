@@ -1,0 +1,8 @@
+{
+   "name": "red_orb",
+   "acceleration":"100",
+   "weight":"500",
+   "armor":"100",
+   "traction":"100",
+   "turning":"1000"
+}

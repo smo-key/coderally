@@ -1,0 +1,13 @@
+<classpath>
+  <container id="LibertyCodeRallyVehicles!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="C:/Users/Bill Bek/IBM/CodeRally/workspace/LibertyCodeRallyVehicles/WebContent/WEB-INF/lib/CodeRallyShared.jar">
+      <source-attachment-path>/CodeRallyShared</source-attachment-path>
+    </entry>
+    <entry id="C:/Users/Bill Bek/IBM/CodeRally/workspace/LibertyCodeRallyVehicles/WebContent/WEB-INF/lib/CodeRally.jar">
+      <source-attachment-path>/CodeRally</source-attachment-path>
+    </entry>
+    <entry id="C:/Users/Bill Bek/IBM/CodeRally/workspace/LibertyCodeRallyVehicles/WebContent/WEB-INF/lib/CodeRallyStandalone.jar">
+      <source-attachment-path>/CodeRallyStandalone</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

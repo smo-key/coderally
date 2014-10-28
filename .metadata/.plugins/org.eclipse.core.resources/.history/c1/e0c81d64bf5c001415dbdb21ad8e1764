@@ -1,0 +1,141 @@
+import java.util.List;
+
+import org.jbox2d.common.Vec2;
+
+import com.ibm.coderally.agent.DefaultCarAIAgent;
+import com.ibm.coderally.api.agent.AIUtils;
+import com.ibm.coderally.entity.cars.agent.Car;
+import com.ibm.coderally.entity.obstacle.agent.Obstacle;
+import com.ibm.coderally.geo.agent.CheckPoint;
+import com.ibm.coderally.geo.agent.Point;
+import com.ibm.coderally.track.agent.Track;
+
+public class Ionecho extends DefaultCarAIAgent {
+	
+	/**** BASE OVERRIDES ****/	
+	
+	@Override
+	public void init(Car car, Track track) {
+		// Provide custom logic or remove method for default implementation.
+		
+		double maxangle = getCar().calculateMaximumTurning(100);
+		System.out.println("Car maximum angle: " + maxangle);
+		/*List<CheckPoint> checkpoints = track.getCheckpoints();
+		for (int i=0; i < checkpoints.size(); i++)
+		{
+			CheckPoint cp = checkpoints.get(i);
+			System.out.println(cp.getStart().getX() + "," + cp.getStart().getY());
+		}*/
+	}
+	
+	@Override
+	public void onRaceStart() {
+		maxSpeed();
+		getCar().setTarget(getCar().getCheckpoint().getCenter());
+	}
+
+	@Override
+	public void onCheckpointUpdated(CheckPoint oldCheckpoint) {
+		// Replace with custom logic or remove method for default implementation.
+		maxSpeed();
+		CheckPoint cp = getCar().getCheckpoint();
+		getCar().setTarget(cp.getCenter());
+	}
+
+	@Override
+	public void onObstacleInProximity(Obstacle obstacle) {
+		// Provide custom logic or remove method for default implementation.		
+	}
+
+	@Override
+	public void onOffTrack() {
+		// Provide custom logic or remove method for default implementation.		
+	}
+
+	@Override
+	public void onOpponentInProximity(Car car) {
+		// Provide custom logic or remove method for default implementation.	
+		//int dist = (int) distance(getCar().getPosition(), car.getPosition());
+		//System.out.println("Opponent within " + dist + "!");
+		getCar().setTarget(AIUtils.getAlternativeLane(getCar().getCheckpoint(), getCar().getPosition()));
+	}
+
+	@Override
+	public void onTimeStep() {
+		// Recalculate heading
+		AIUtils.recalculateHeading(getCar());
+		
+		// Head towards closest checkpoint
+		CheckPoint cp = getCar().getCheckpoint();
+		
+		double heading = angle(getCar().getVelocity());
+
+		//get differences in angle, smallest wins
+		double center = Math.abs(heading - angle(getCar().getPosition(), cp.getCenter()));
+		double end = Math.abs(heading - angle(getCar().getPosition(), cp.getEnd()));
+		double start = Math.abs(heading - angle(getCar().getPosition(), cp.getStart()));
+		
+		// Get closest checkpoint
+		Point closest = cp.getCenter();
+		double closestd = center; //closest angle
+		//if (end < closestd) { closestd = end; closest = cp.getEnd(); }
+		//if (start < closestd) { closestd = start; closest = cp.getStart(); }
+		
+		// Go to closest checkpoint
+		getCar().setTarget(closest);
+		
+		// Brake to scale acceleration to certain amount (greater angle, lower acceleration)
+		
+		// Later, try difference between current heading vector and current acceleration vector
+		// to change speed: more current turning, slower car
+		
+		double accelheading = angle(getCar().getAcceleration());
+		double headingdiff = 45 - Math.abs(heading - accelheading);
+		double accel = 80 * Math.cos(Math.abs(headingdiff) / 180 * Math.PI);
+		//getCar().setBrakePercent((int) (100 - accel));
+		getCar().setAccelerationPercent((int) accel);
+	}
+
+	@Override
+	public void onCarCollision(Car other) {
+		// Provide custom logic or remove method for default implementation.		
+	}
+	
+	@Override
+	public void onObstacleCollision(Obstacle obstacle) {
+		// Similar to onCarCollision, this will help you reorient
+		// yourself if an obstacle does affect your position
+	}
+
+	@Override
+	public void onStalled() {
+		// If your vehicle stops moving for any reason, this event is called so you can
+		// adjust whatever you need to.
+	}
+	
+	
+	/**** LOGIC METHODS ****/
+	
+	public void maxSpeed()
+	{
+		getCar().setBrakePercent(0);
+		getCar().setAccelerationPercent(100);
+	}
+	
+	public double distance(Point a, Point b)
+	{
+		return Math.sqrt(Math.pow(b.getX() - a.getX(), 2) + (Math.pow(b.getY() - a.getY(), 2)));
+	}
+	
+	public double angle(Point a, Point b)
+	{
+		double angle = Math.atan2(b.getY() - a.getY(), b.getX() - a.getX()) * 180 / Math.PI;
+		return Math.abs(angle);
+	}
+	public double angle(Vec2 a)
+	{
+		double angle = Math.atan2(a.y, a.x) * 180 / Math.PI;
+		return Math.abs(angle);
+	}
+	
+}

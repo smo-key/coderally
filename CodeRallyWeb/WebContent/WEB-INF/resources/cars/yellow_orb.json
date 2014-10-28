@@ -1,0 +1,8 @@
+{
+   "name": "yellow_orb",
+   "acceleration":"1000",
+   "weight":"100",
+   "armor":"0",
+   "traction":"100",
+   "turning":"1000"
+}

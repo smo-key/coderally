@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/nosqljson.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/java_websocket.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jbox2d-library-2.1.2.2-modified-2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/tyrus-standalone-client-1.7.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/CodeRally.jar" sourcepath="/CodeRally"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/CodeRallyStandalone.jar" sourcepath="/CodeRallyStandalone"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jackson-databind-2.0.6.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/com.ibm.ws.cftools.server.classPathProvider/Bluemix">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path=".apt_generated">
+		<attributes>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-math3-3.0.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/CodeRallyShared.jar" sourcepath="WebContent/WEB-INF/lib/CodeRallyShared.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jackson-annotations-2.0.6.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jackson-core-2.0.6.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jackson-datatype-json-org-2.0.2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/db2jcc.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-io-2.4.jar"/>
+	<classpathentry kind="output" path="WebContent/WEB-INF/classes"/>
+</classpath>

@@ -1,0 +1,13 @@
+{
+   "name":"space",
+   "scale":"0.3",
+   "images":[
+      "/obstacles/space/asteroid.png"
+   ],
+   "type":"aabb",
+   "placement":[
+       {"x_offset":"-40", "y_offset":"-40"},
+       {"x_offset":"40", "y_offset":"-40"},
+       {"x_offset":"0", "y_offset":"40"}
+   ]
+}

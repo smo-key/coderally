@@ -1,0 +1,99 @@
+import com.ibm.coderally.agent.CRSFileLog;
+import com.ibm.coderally.agent.DefaultCarAIAgent;
+import com.ibm.coderally.api.agent.AIUtils;
+import com.ibm.coderally.entity.cars.agent.Car;
+import com.ibm.coderally.entity.obstacle.agent.Obstacle;
+import com.ibm.coderally.geo.agent.CheckPoint;
+import com.ibm.coderally.geo.agent.Point;
+import com.ibm.coderally.geo.agent.Rotation;
+import com.ibm.coderally.track.agent.Track;
+import com.ibm.coderally.api.CodeRallyOptions;
+
+public class Ionfoxtrot extends DefaultCarAIAgent {
+
+	Track track = null;
+	
+	@Override
+	public void init(Car car, Track track) {
+		// Create Track Bezier Curve
+		this.track = track;
+	}
+	
+	@Override
+	public void onRaceStart() {
+		getCar().setBrakePercent(0);
+		getCar().setTarget(IonUtils.getClosestLane(getCar().getCheckpoint(), getCar().getPosition()));
+		getCar().setAccelerationPercent(100);
+	}
+	
+	@Override
+	public void onTimeStep() {
+		// Replace with custom logic or remove method for default implementation.
+		
+		// Variable preparation
+		CheckPoint cp = getCar().getCheckpoint();
+		Point pos = getCar().getPosition();
+		Rotation rot = getCar().getRotation();
+		
+		CodeRallyOptions options = new CodeRallyOptions();
+		long t = options.getMovementTimestep();
+		
+		// Move in midpoint
+		
+		if (Math.sqrt(IonUtils.cpdist(pos, rot, cp)) < 100)
+		{
+			//turn somewhat toward next checkpoint if current is within reach
+			getCar().setTarget(IonUtils.getClosestLane(track.getNextCheckpoint(track.getNextCheckpoint(cp)), pos));
+		}
+				
+		IonUtils.recalculateHeading(getCar(), 0.8); //higher bias, faster turns
+		
+		
+		
+		// Acceleration and Turning
+		// 100% Accel, 50% Turning Radius (/2)
+		// 100% Brake, 200% Turning Radius (x2)
+		
+		// Checkpoint handling
+		// You can be within 40 pixels of a checkpoint
+	}
+	
+	@Override
+	public void onCheckpointUpdated(CheckPoint oldCheckpoint) {
+		// Replace with custom logic or remove method for default implementation.
+		getCar().setBrakePercent(0);
+		getCar().setAccelerationPercent(100);
+		getCar().setTarget(IonUtils.getClosestLane(getCar().getCheckpoint(), getCar().getPosition()));
+	}
+	
+	@Override
+	public void onOpponentInProximity(Car car) {
+		// Provide custom logic or remove method for default implementation.		
+	}
+	
+	@Override
+	public void onObstacleInProximity(Obstacle obstacle) {
+		// Provide custom logic or remove method for default implementation.		
+	}
+	
+	@Override
+	public void onCarCollision(Car other) {
+		
+	}
+	
+	@Override
+	public void onObstacleCollision(Obstacle obstacle) {
+		// Provide custom logic or remove method for default implementation.		
+	}
+
+	@Override
+	public void onOffTrack() {
+		// Provide custom logic or remove method for default implementation.		
+	}
+
+	@Override
+	public void onStalled() {
+		// Provide custom logic or remove method for default implementation.		
+	}
+
+}

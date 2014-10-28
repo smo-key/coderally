@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="J2EE_IMPORT_EAR">
+		<item value="C:\Program Files\IBM\CodeRally\webapps\CodeRallyServer.ear"/>
+	</list>
+	<list key="MRU_RUNTIME_STORE">
+		<item value="WebSphere Application Server Liberty Profile"/>
+	</list>
+</section>

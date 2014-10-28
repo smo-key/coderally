@@ -1,0 +1,1378 @@
+!SESSION 2014-10-25 18:13:03.144 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.fullversion=JRE 1.7.0 IBM J9 2.6 Windows 7 amd64-64 Compressed References 20140820_210490 (JIT enabled, AOT enabled)
+J9VM - R26_Java726_SR7_20140820_1356_B210490
+JIT  - r11.b06_20140409_61252.04
+GC   - R26_Java726_SR7_20140820_1356_B210490_CMPRSS
+J9CL - 20140820_210490
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.update.configurator 4 0 2014-10-25 18:14:04.268
+!MESSAGE Unable to find feature.xml in directory: C:\Program Files\IBM\CodeRally\features\com.ibm.cftools.feature_1.0.1.v20140912_1000.jar
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2014-10-25 18:14:12.296
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Program Files\IBM\CodeRally\dropins\artifacts.jar.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2014-10-25 18:14:13.329
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at jar:file:/C:/Program%20Files/IBM/CodeRally/dropins/artifacts.jar!/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:692)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.loadMetadataRepository(Activator.java:99)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.DropinsRepositoryListener.getMetadataRepository(DropinsRepositoryListener.java:233)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.DropinsRepositoryListener.addRepository(DropinsRepositoryListener.java:122)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.DropinsRepositoryListener.added(DropinsRepositoryListener.java:96)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.processFile(DirectoryWatcher.java:197)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.scanDirectories(DirectoryWatcher.java:160)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:108)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.watchDropins(Activator.java:542)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:172)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:330)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:936)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:319)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1562)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2014-10-25 18:14:13.329
+!MESSAGE No repository found at jar:file:/C:/Program%20Files/IBM/CodeRally/dropins/artifacts.jar!/.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2014-10-25 18:14:13.812
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Program Files\IBM\CodeRally\dropins\content.jar.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2014-10-25 18:14:15.410
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at jar:file:/C:/Program%20Files/IBM/CodeRally/dropins/content.jar!/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:692)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:104)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.loadArtifactRepository(Activator.java:142)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.DropinsRepositoryListener.getArtifactRepository(DropinsRepositoryListener.java:260)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.DropinsRepositoryListener.addRepository(DropinsRepositoryListener.java:123)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.DropinsRepositoryListener.added(DropinsRepositoryListener.java:96)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.processFile(DirectoryWatcher.java:197)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.scanDirectories(DirectoryWatcher.java:160)
+	at org.eclipse.equinox.internal.provisional.p2.directorywatcher.DirectoryWatcher.poll(DirectoryWatcher.java:108)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.watchDropins(Activator.java:542)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:172)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(AccessController.java:330)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:936)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:319)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1562)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 1000 2014-10-25 18:14:15.410
+!MESSAGE No repository found at jar:file:/C:/Program%20Files/IBM/CodeRally/dropins/content.jar!/.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2014-10-25 18:14:15.460
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Program Files\IBM\CodeRally\dropins\features.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2014-10-25 18:14:15.500
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Program Files\IBM\CodeRally\dropins\plugins.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2014-10-25 18:14:19.892
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Program Files\IBM\CodeRally\features\com.ibm.cftools.feature_1.0.1.v20140912_1000.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2014-10-25 18:14:20.487
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Program Files\IBM\CodeRally\features\com.ibm.cftools.feature_1.0.1.v20140912_1000.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2014-10-25 18:14:20.777
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Program Files\IBM\CodeRally\features\com.ibm.cftools.feature_1.0.1.v20140912_1000.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2014-10-25 18:14:21.027
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Program Files\IBM\CodeRally\features\com.ibm.cftools.feature_1.0.1.v20140912_1000.jar.
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2014-10-25 18:16:08.497
+!MESSAGE Exception while setting up logging:BundleContext is no longer valid
+!STACK 0
+java.lang.IllegalStateException: BundleContext is no longer valid
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.checkValid(BundleContextImpl.java:983)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getBundle(BundleContextImpl.java:129)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:116)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY org.eclipse.ui 4 4 2014-10-25 18:16:24.951
+!MESSAGE Referenced part does not exist yet: com.ibm.etools.ui.navigator.SDExplorer.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-10-25 18:17:21.516
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Bill Bek'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.security 1 0 2014-10-25 18:20:53.443
+!MESSAGE New keyring password generated. 
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-10-25 18:23:37.638
+!MESSAGE An internal error occurred during: "Enter Race".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.server.core.ServerUtil.getModule(ServerUtil.java:66)
+	at com.ibm.coderallyplugin.view.action.WebUtils.addOrRemoveEarFromServer(WebUtils.java:65)
+	at com.ibm.coderallyplugin.view.action.EnterRaceJob.run(EnterRaceAction.java:705)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 18:23:55.283
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin org.cloudfoundry.ide.eclipse.server.branding.
+
+!ENTRY org.eclipse.help.base 4 0 2014-10-25 18:26:21.232
+!MESSAGE Internal error while reading topic extensions from remote server
+!STACK 0
+org.xml.sax.SAXParseException: The entity name must immediately follow the '&' in the entity reference.
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.eclipse.help.internal.dynamic.DocumentReader.read(DocumentReader.java:56)
+	at org.eclipse.help.internal.dynamic.DocumentReader.read(DocumentReader.java:44)
+	at org.eclipse.help.internal.base.remote.RemoteExtensionProvider.getContentExtensions(RemoteExtensionProvider.java:66)
+	at org.eclipse.help.internal.extension.ContentExtensionManager.loadExtensions(ContentExtensionManager.java:100)
+	at org.eclipse.help.internal.extension.ContentExtensionManager.getExtensions(ContentExtensionManager.java:68)
+	at org.eclipse.help.internal.dynamic.ExtensionResolver.resolveExtension(ExtensionResolver.java:61)
+	at org.eclipse.help.internal.dynamic.ExtensionHandler.handleExtension(ExtensionHandler.java:62)
+	at org.eclipse.help.internal.dynamic.ExtensionHandler.handle(ExtensionHandler.java:43)
+	at org.eclipse.help.internal.dynamic.DocumentProcessor.process(DocumentProcessor.java:44)
+	at org.eclipse.help.internal.dynamic.DocumentProcessor.process(DocumentProcessor.java:57)
+	at org.eclipse.help.internal.dynamic.DocumentProcessor.process(DocumentProcessor.java:57)
+	at org.eclipse.help.internal.toc.TocAssembler.process(TocAssembler.java:250)
+	at org.eclipse.help.internal.toc.TocAssembler.access$1(TocAssembler.java:230)
+	at org.eclipse.help.internal.toc.TocAssembler$AnchorHandler.handle(TocAssembler.java:408)
+	at org.eclipse.help.internal.dynamic.DocumentProcessor.process(DocumentProcessor.java:44)
+	at org.eclipse.help.internal.dynamic.DocumentProcessor.process(DocumentProcessor.java:57)
+	at org.eclipse.help.internal.toc.TocAssembler.process(TocAssembler.java:250)
+	at org.eclipse.help.internal.toc.TocAssembler.hasAnchor(TocAssembler.java:189)
+	at org.eclipse.help.internal.toc.TocAssembler.hasValidLinkTo(TocAssembler.java:213)
+	at org.eclipse.help.internal.toc.TocAssembler.getBooks(TocAssembler.java:100)
+	at org.eclipse.help.internal.toc.TocAssembler.assemble(TocAssembler.java:75)
+	at org.eclipse.help.internal.toc.TocManager.getRootTocContributions(TocManager.java:309)
+	at org.eclipse.help.internal.toc.TocManager.getTocs(TocManager.java:68)
+	at org.eclipse.help.internal.webapp.data.TocData.loadTocs(TocData.java:230)
+	at org.eclipse.help.internal.webapp.data.TocData.<init>(TocData.java:120)
+	at org.eclipse.help.internal.webapp.data.LayoutData.getContentURL(LayoutData.java:126)
+	at org.apache.jsp.advanced.content_jsp._jspService(org.apache.jsp.advanced.content_jsp:135)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:403)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.jsp.jasper.JspServlet.service(JspServlet.java:155)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.registry.internal.ServletManager$ServletWrapper.service(ServletManager.java:180)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:68)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.jetty.internal.HttpServerManager$InternalHttpServiceServlet.service(HttpServerManager.java:360)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:229)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:428)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:667)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:795)
+
+!ENTRY org.eclipse.jface 2 0 2014-10-25 18:26:35.574
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-25 18:26:35.574
+!MESSAGE A conflict occurred for CTRL+I:
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,Format Active Elements,
+		Format active elements,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@ae3454c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.indent,Correct Indentation,
+		Corrects the indentation of the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7f8c905f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-25 18:26:35.574
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.document,Format,
+		Format selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@594f969a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@961c6d8c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-25 18:26:35.574
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_UP:
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@45e2ff5a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2a2fb5de,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-25 18:26:35.574
+!MESSAGE A conflict occurred for CTRL+SHIFT+/:
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.add.block.comment,Add Block Comment,
+		Add Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@8622443b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.add.block.comment,Add Block Comment,
+		Enclose the selection with a block comment,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@47b601bf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-25 18:26:35.574
+!MESSAGE A conflict occurred for CTRL+O:
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.quick_outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6a24c416,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.show.outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3c7e1686,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-25 18:26:35.574
+!MESSAGE A conflict occurred for CTRL+SHIFT+M:
+Binding(CTRL+SHIFT+M,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.add.import,Add Import,
+		Create import statement on selection,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5a488832,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+M,
+	ParameterizedCommand(Command(org.eclipse.jst.jsp.ui.add.imports,Add Im&port,
+		Create import declaration for selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3b29d481,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jst.jsp.ui.structured.text.editor.jsp.scope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-25 18:26:35.574
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_DOWN:
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@30d8348c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@416f9bf6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-25 18:26:35.574
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_UP:
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.previousSibling,Previous Sibling,
+		Go to Previous Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@12bcf66b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.previous.member,Go to Previous Member,
+		Move the caret to the previous member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@290ada4f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-25 18:26:35.574
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_RIGHT:
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@9eace314,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@cc318002,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-25 18:26:35.574
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.toggle.comment,Toggle Comment,
+		Toggle Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f830b942,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6b087dc4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-25 18:26:35.574
+!MESSAGE A conflict occurred for CTRL+SHIFT+\:
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.remove.block.comment,Remove Block Comment,
+		Remove Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@d5e378d8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.remove.block.comment,Remove Block Comment,
+		Remove the block comment enclosing the selection,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6c40933a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-25 18:26:35.574
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_LEFT:
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6f3b0a01,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@191e43cc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-25 18:26:35.574
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_DOWN:
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.nextSibling,Next Sibling,
+		Go to Next Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@8e5854f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.next.member,Go to Next Member,
+		Move the caret to the next member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@b7bbffa3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+
+!ENTRY org.eclipse.debug.ui 4 0 2014-10-25 18:29:57.905
+!MESSAGE Launch shortcut 'com.ibm.etools.webtools.doh.launch.LaunchSingleFileShortcut' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.eclipse.core.resources.contentTypeId to type class org.eclipse.ui.part.FileEditorInput
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:29)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:150)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:72)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:53)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:281)
+	at org.eclipse.debug.ui.actions.LaunchShortcutsAction.isApplicable(LaunchShortcutsAction.java:261)
+	at org.eclipse.debug.ui.actions.LaunchShortcutsAction.fillMenu(LaunchShortcutsAction.java:170)
+	at org.eclipse.debug.ui.actions.LaunchShortcutsAction.access$0(LaunchShortcutsAction.java:161)
+	at org.eclipse.debug.ui.actions.LaunchShortcutsAction$2.menuShown(LaunchShortcutsAction.java:278)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:782)
+	at org.eclipse.jface.action.ActionContributionItem.copyMenu(ActionContributionItem.java:1276)
+	at org.eclipse.jface.action.ActionContributionItem.handleShowProxy(ActionContributionItem.java:1256)
+	at org.eclipse.jface.action.ActionContributionItem.access$4(ActionContributionItem.java:1245)
+	at org.eclipse.jface.action.ActionContributionItem$8.handleEvent(ActionContributionItem.java:1218)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4963)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4639)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:256)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4213)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3755)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:94)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:619)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2014-10-25 18:29:57.905
+!MESSAGE No property tester contributes a property org.eclipse.core.resources.contentTypeId to type class org.eclipse.ui.part.FileEditorInput
+
+!ENTRY org.cloudfoundry.ide.eclipse.server.core 4 0 2014-10-25 18:33:02.366
+!MESSAGE Failed to push application - Client error - You have exceeded your organization's memory limit. (400 Bad Request)
+
+!ENTRY org.cloudfoundry.ide.eclipse.server.core 4 0 2014-10-25 18:33:02.376
+!MESSAGE Client error - You have exceeded your organization's memory limit. (400 Bad Request)
+!STACK 0
+org.cloudfoundry.client.lib.CloudFoundryException: 400 Bad Request (You have exceeded your organization's memory limit.)
+	at org.cloudfoundry.client.lib.rest.CloudControllerResponseErrorHandler.getException(CloudControllerResponseErrorHandler.java:69)
+	at org.cloudfoundry.client.lib.rest.CloudControllerResponseErrorHandler.handleError(CloudControllerResponseErrorHandler.java:24)
+	at org.springframework.web.client.RestTemplate.handleResponseError(RestTemplate.java:557)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:515)
+	at org.cloudfoundry.client.lib.rest.LoggingRestTemplate.doExecute(LoggingRestTemplate.java:54)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:473)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:322)
+	at org.cloudfoundry.client.lib.rest.CloudControllerClientImpl.createApplication(CloudControllerClientImpl.java:959)
+	at org.cloudfoundry.client.lib.rest.CloudControllerClientImpl.createApplication(CloudControllerClientImpl.java:942)
+	at org.cloudfoundry.client.lib.CloudFoundryClient.createApplication(CloudFoundryClient.java:234)
+	at org.cloudfoundry.ide.eclipse.server.core.internal.client.CloudFoundryServerBehaviour$PushApplicationOperation.pushApplication(CloudFoundryServerBehaviour.java:2492)
+	at org.cloudfoundry.ide.eclipse.server.core.internal.client.CloudFoundryServerBehaviour$StartOperation$1.doRun(CloudFoundryServerBehaviour.java:2229)
+	at org.cloudfoundry.ide.eclipse.server.core.internal.client.CloudFoundryServerBehaviour$StartOperation$1.doRun(CloudFoundryServerBehaviour.java:1)
+	at org.cloudfoundry.ide.eclipse.server.core.internal.client.BaseClientRequest.runAndWait(BaseClientRequest.java:127)
+	at org.cloudfoundry.ide.eclipse.server.core.internal.client.ClientRequest.runAndWait(ClientRequest.java:66)
+	at org.cloudfoundry.ide.eclipse.server.core.internal.client.LocalServerRequest.runAndWait(LocalServerRequest.java:64)
+	at org.cloudfoundry.ide.eclipse.server.core.internal.client.BaseClientRequest.run(BaseClientRequest.java:70)
+	at org.cloudfoundry.ide.eclipse.server.core.internal.client.CloudFoundryServerBehaviour$StartOperation.performDeployment(CloudFoundryServerBehaviour.java:2239)
+	at org.cloudfoundry.ide.eclipse.server.core.internal.client.CloudFoundryServerBehaviour$PushApplicationOperation.performDeployment(CloudFoundryServerBehaviour.java:2501)
+	at org.cloudfoundry.ide.eclipse.server.core.internal.client.CloudFoundryServerBehaviour$ApplicationOperation.performOperation(CloudFoundryServerBehaviour.java:2037)
+	at org.cloudfoundry.ide.eclipse.server.core.internal.client.AbstractDeploymentOperation.run(AbstractDeploymentOperation.java:42)
+	at org.cloudfoundry.ide.eclipse.server.core.internal.client.CloudFoundryServerBehaviour.publishModule(CloudFoundryServerBehaviour.java:1392)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-10-25 18:33:05.968
+!MESSAGE An internal error occurred during: "Enter Race".
+!STACK 0
+java.lang.NullPointerException
+	at com.ibm.coderallyplugin.view.action.EnterRaceJob.run(EnterRaceAction.java:716)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-10-25 18:33:21.620
+!MESSAGE An internal error occurred during: "Enter Race".
+!STACK 0
+java.lang.NullPointerException
+	at com.ibm.coderallyplugin.view.action.EnterRaceJob.run(EnterRaceAction.java:716)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2014-10-25 18:34:48.730
+!MESSAGE Server Code Rally - Bluemix failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2014-10-25 18:35:04.996
+!MESSAGE Server Code Rally - Bluemix failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2014-10-25 18:35:16.266
+!MESSAGE Server Code Rally - Bluemix failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2014-10-25 18:35:16.266
+!MESSAGE Server Code Rally - Bluemix failed to start.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 18:36:38.472
+!MESSAGE Failed while invoking preset factory "org.eclipse.wst.common.project.facet.core".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.common.project.facet.core.PresetDefinition.<init>(PresetDefinition.java:53)
+	at org.eclipse.wst.common.project.facet.core.DefaultConfigurationPresetFactory.createPreset(DefaultConfigurationPresetFactory.java:78)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:580)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailablePresets(FacetedProjectWorkingCopy.java:973)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailableFacets(FacetedProjectWorkingCopy.java:677)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshTargetableRuntimes(FacetedProjectWorkingCopy.java:1183)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy$1.run(FacetedProjectWorkingCopy.java:219)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 18:36:38.482
+!MESSAGE Failed while invoking preset factory "org.eclipse.wst.common.project.facet.core".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.common.project.facet.core.PresetDefinition.<init>(PresetDefinition.java:53)
+	at org.eclipse.wst.common.project.facet.core.DefaultConfigurationPresetFactory.createPreset(DefaultConfigurationPresetFactory.java:78)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:580)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$StaticExtendingDynamicPreset.resolve(PresetsExtensionPoint.java:505)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailablePresets(FacetedProjectWorkingCopy.java:973)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailableFacets(FacetedProjectWorkingCopy.java:677)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshTargetableRuntimes(FacetedProjectWorkingCopy.java:1183)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy$1.run(FacetedProjectWorkingCopy.java:219)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 18:36:38.482
+!MESSAGE Failed while invoking preset factory "org.eclipse.wst.common.project.facet.core".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.common.project.facet.core.PresetDefinition.<init>(PresetDefinition.java:53)
+	at org.eclipse.wst.common.project.facet.core.DefaultConfigurationPresetFactory.createPreset(DefaultConfigurationPresetFactory.java:78)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:580)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailablePresets(FacetedProjectWorkingCopy.java:973)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailableFacets(FacetedProjectWorkingCopy.java:677)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshTargetableRuntimes(FacetedProjectWorkingCopy.java:1183)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy$1.run(FacetedProjectWorkingCopy.java:219)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 18:36:38.492
+!MESSAGE Failed while invoking preset factory "org.eclipse.wst.common.project.facet.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.common.project.facet.core.MinimalConfigurationPresetFactory.findProjectFacetVersion(MinimalConfigurationPresetFactory.java:77)
+	at org.eclipse.wst.common.project.facet.core.MinimalConfigurationPresetFactory.createPreset(MinimalConfigurationPresetFactory.java:66)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:580)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailablePresets(FacetedProjectWorkingCopy.java:973)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailableFacets(FacetedProjectWorkingCopy.java:677)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshTargetableRuntimes(FacetedProjectWorkingCopy.java:1183)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy$1.run(FacetedProjectWorkingCopy.java:219)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 18:36:38.492
+!MESSAGE Failed while invoking preset factory "org.eclipse.wst.common.project.facet.core".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.common.project.facet.core.PresetDefinition.<init>(PresetDefinition.java:53)
+	at org.eclipse.wst.common.project.facet.core.DefaultConfigurationPresetFactory.createPreset(DefaultConfigurationPresetFactory.java:78)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:580)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$StaticExtendingDynamicPreset.resolve(PresetsExtensionPoint.java:505)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailablePresets(FacetedProjectWorkingCopy.java:973)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailableFacets(FacetedProjectWorkingCopy.java:677)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshTargetableRuntimes(FacetedProjectWorkingCopy.java:1183)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy$1.run(FacetedProjectWorkingCopy.java:219)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 18:36:38.502
+!MESSAGE Failed while invoking preset factory "org.eclipse.wst.common.project.facet.core".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.common.project.facet.core.PresetDefinition.<init>(PresetDefinition.java:53)
+	at org.eclipse.wst.common.project.facet.core.DefaultConfigurationPresetFactory.createPreset(DefaultConfigurationPresetFactory.java:78)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:580)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$StaticExtendingDynamicPreset.resolve(PresetsExtensionPoint.java:505)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailablePresets(FacetedProjectWorkingCopy.java:973)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailableFacets(FacetedProjectWorkingCopy.java:677)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshTargetableRuntimes(FacetedProjectWorkingCopy.java:1183)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy$1.run(FacetedProjectWorkingCopy.java:219)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 18:36:38.502
+!MESSAGE Failed while invoking preset factory "org.eclipse.wst.common.project.facet.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.common.project.facet.core.MinimalConfigurationPresetFactory.findProjectFacetVersion(MinimalConfigurationPresetFactory.java:77)
+	at org.eclipse.wst.common.project.facet.core.MinimalConfigurationPresetFactory.createPreset(MinimalConfigurationPresetFactory.java:66)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:580)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailablePresets(FacetedProjectWorkingCopy.java:973)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailableFacets(FacetedProjectWorkingCopy.java:677)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshTargetableRuntimes(FacetedProjectWorkingCopy.java:1183)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy$1.run(FacetedProjectWorkingCopy.java:219)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 18:36:38.502
+!MESSAGE Failed while invoking preset factory "org.eclipse.wst.common.project.facet.core".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.common.project.facet.core.PresetDefinition.<init>(PresetDefinition.java:53)
+	at org.eclipse.wst.common.project.facet.core.DefaultConfigurationPresetFactory.createPreset(DefaultConfigurationPresetFactory.java:78)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:580)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$StaticExtendingDynamicPreset.resolve(PresetsExtensionPoint.java:505)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailablePresets(FacetedProjectWorkingCopy.java:973)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailableFacets(FacetedProjectWorkingCopy.java:677)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshTargetableRuntimes(FacetedProjectWorkingCopy.java:1183)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy$1.run(FacetedProjectWorkingCopy.java:219)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 18:36:38.512
+!MESSAGE Failed while invoking preset factory "org.eclipse.wst.common.project.facet.core".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.common.project.facet.core.PresetDefinition.<init>(PresetDefinition.java:53)
+	at org.eclipse.wst.common.project.facet.core.DefaultConfigurationPresetFactory.createPreset(DefaultConfigurationPresetFactory.java:78)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:580)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$StaticExtendingDynamicPreset.resolve(PresetsExtensionPoint.java:505)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailablePresets(FacetedProjectWorkingCopy.java:973)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailableFacets(FacetedProjectWorkingCopy.java:677)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshTargetableRuntimes(FacetedProjectWorkingCopy.java:1183)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy$1.run(FacetedProjectWorkingCopy.java:219)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 18:36:38.512
+!MESSAGE Failed while invoking preset factory "org.eclipse.wst.common.project.facet.core".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.common.project.facet.core.PresetDefinition.<init>(PresetDefinition.java:53)
+	at org.eclipse.wst.common.project.facet.core.DefaultConfigurationPresetFactory.createPreset(DefaultConfigurationPresetFactory.java:78)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:580)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$StaticExtendingDynamicPreset.resolve(PresetsExtensionPoint.java:505)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailablePresets(FacetedProjectWorkingCopy.java:973)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailableFacets(FacetedProjectWorkingCopy.java:677)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshTargetableRuntimes(FacetedProjectWorkingCopy.java:1183)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy$1.run(FacetedProjectWorkingCopy.java:219)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 18:36:38.522
+!MESSAGE Failed while invoking preset factory "org.eclipse.wst.common.project.facet.core".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.common.project.facet.core.PresetDefinition.<init>(PresetDefinition.java:53)
+	at org.eclipse.wst.common.project.facet.core.DefaultConfigurationPresetFactory.createPreset(DefaultConfigurationPresetFactory.java:78)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:580)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$StaticExtendingDynamicPreset.resolve(PresetsExtensionPoint.java:505)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailablePresets(FacetedProjectWorkingCopy.java:973)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailableFacets(FacetedProjectWorkingCopy.java:677)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshTargetableRuntimes(FacetedProjectWorkingCopy.java:1183)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy$1.run(FacetedProjectWorkingCopy.java:219)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 18:36:38.522
+!MESSAGE Failed while invoking preset factory "org.eclipse.jpt.jpa.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jpt.jpa.core.internal.facet.BasicJpaEEConfigurationPresetFactory.findProjectFacetVersion(BasicJpaEEConfigurationPresetFactory.java:64)
+	at org.eclipse.jpt.jpa.core.internal.facet.BasicJpaEEConfigurationPresetFactory.createPreset(BasicJpaEEConfigurationPresetFactory.java:53)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:580)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailablePresets(FacetedProjectWorkingCopy.java:973)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailableFacets(FacetedProjectWorkingCopy.java:677)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshTargetableRuntimes(FacetedProjectWorkingCopy.java:1183)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy$1.run(FacetedProjectWorkingCopy.java:219)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 18:36:38.522
+!MESSAGE Failed while invoking preset factory "org.eclipse.wst.common.project.facet.core".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.common.project.facet.core.PresetDefinition.<init>(PresetDefinition.java:53)
+	at org.eclipse.wst.common.project.facet.core.DefaultConfigurationPresetFactory.createPreset(DefaultConfigurationPresetFactory.java:78)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:580)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$StaticExtendingDynamicPreset.resolve(PresetsExtensionPoint.java:505)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailablePresets(FacetedProjectWorkingCopy.java:973)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailableFacets(FacetedProjectWorkingCopy.java:677)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshTargetableRuntimes(FacetedProjectWorkingCopy.java:1183)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy$1.run(FacetedProjectWorkingCopy.java:219)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 18:36:38.532
+!MESSAGE Failed while invoking preset factory "org.eclipse.jpt.jpa.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jpt.jpa.core.internal.facet.BasicJpaSEConfigurationPresetFactory.findProjectFacetVersion(BasicJpaSEConfigurationPresetFactory.java:62)
+	at org.eclipse.jpt.jpa.core.internal.facet.BasicJpaSEConfigurationPresetFactory.createPreset(BasicJpaSEConfigurationPresetFactory.java:51)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:580)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailablePresets(FacetedProjectWorkingCopy.java:973)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailableFacets(FacetedProjectWorkingCopy.java:677)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshTargetableRuntimes(FacetedProjectWorkingCopy.java:1183)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy$1.run(FacetedProjectWorkingCopy.java:219)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 18:36:38.532
+!MESSAGE Failed while invoking preset factory "org.eclipse.jpt.jpa.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jpt.jpa.core.internal.facet.BasicJpaEEConfigurationPresetFactory.findProjectFacetVersion(BasicJpaEEConfigurationPresetFactory.java:64)
+	at org.eclipse.jpt.jpa.core.internal.facet.BasicJpaEEConfigurationPresetFactory.createPreset(BasicJpaEEConfigurationPresetFactory.java:53)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:580)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailablePresets(FacetedProjectWorkingCopy.java:973)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailableFacets(FacetedProjectWorkingCopy.java:677)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshTargetableRuntimes(FacetedProjectWorkingCopy.java:1183)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy$1.run(FacetedProjectWorkingCopy.java:219)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 18:36:38.542
+!MESSAGE Failed while invoking preset factory "org.eclipse.wst.common.project.facet.core".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.common.project.facet.core.PresetDefinition.<init>(PresetDefinition.java:53)
+	at org.eclipse.wst.common.project.facet.core.DefaultConfigurationPresetFactory.createPreset(DefaultConfigurationPresetFactory.java:78)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:580)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$StaticExtendingDynamicPreset.resolve(PresetsExtensionPoint.java:505)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailablePresets(FacetedProjectWorkingCopy.java:973)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailableFacets(FacetedProjectWorkingCopy.java:677)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshTargetableRuntimes(FacetedProjectWorkingCopy.java:1183)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy$1.run(FacetedProjectWorkingCopy.java:219)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 18:36:38.542
+!MESSAGE Failed while invoking preset factory "org.eclipse.jpt.jpa.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jpt.jpa.core.internal.facet.BasicJpaSEConfigurationPresetFactory.findProjectFacetVersion(BasicJpaSEConfigurationPresetFactory.java:62)
+	at org.eclipse.jpt.jpa.core.internal.facet.BasicJpaSEConfigurationPresetFactory.createPreset(BasicJpaSEConfigurationPresetFactory.java:51)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:580)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailablePresets(FacetedProjectWorkingCopy.java:973)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailableFacets(FacetedProjectWorkingCopy.java:677)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshTargetableRuntimes(FacetedProjectWorkingCopy.java:1183)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy$1.run(FacetedProjectWorkingCopy.java:219)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 18:36:38.552
+!MESSAGE Failed while invoking preset factory "org.eclipse.wst.common.project.facet.core".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.common.project.facet.core.PresetDefinition.<init>(PresetDefinition.java:53)
+	at org.eclipse.wst.common.project.facet.core.DefaultConfigurationPresetFactory.createPreset(DefaultConfigurationPresetFactory.java:78)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:580)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$StaticExtendingDynamicPreset.resolve(PresetsExtensionPoint.java:505)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailablePresets(FacetedProjectWorkingCopy.java:973)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshAvailableFacets(FacetedProjectWorkingCopy.java:677)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.refreshTargetableRuntimes(FacetedProjectWorkingCopy.java:1183)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy$1.run(FacetedProjectWorkingCopy.java:219)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.ibm.etools.javaee.core 4 0 2014-10-25 18:42:32.958
+!MESSAGE Project facet  has not been defined.
+!STACK 0
+java.lang.IllegalArgumentException: Project facet  has not been defined.
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl.getProjectFacet(FacetedProjectFrameworkImpl.java:234)
+	at org.eclipse.wst.common.project.facet.core.ProjectFacetsManager.getProjectFacet(ProjectFacetsManager.java:75)
+	at com.ibm.etools.javaee.model.internal.JEE5ModelProvider.getDefaultFacet(JEE5ModelProvider.java:200)
+	at com.ibm.etools.javaee.model.internal.Web25ModelProvider.getVersionString(Web25ModelProvider.java:459)
+	at com.ibm.etools.javaee.model.internal.JEE5ModelProvider.getModelResource(JEE5ModelProvider.java:181)
+	at com.ibm.etools.javaee.model.internal.Web25ModelProvider.getModelResource(Web25ModelProvider.java:428)
+	at com.ibm.etools.javaee.model.internal.Web25ModelProvider.getXMLModel(Web25ModelProvider.java:288)
+	at com.ibm.etools.javaee.model.internal.Web25ModelProvider.getModelObject(Web25ModelProvider.java:179)
+	at com.ibm.etools.javaee.model.internal.Web25ModelProvider.getModelObject(Web25ModelProvider.java:195)
+	at com.ibm.etools.javaee.model.internal.JEE5ModelProvider.getModelObject(JEE5ModelProvider.java:305)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider.getCachedContentProvider(JEE5ContentProvider.java:98)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25ContentProvider.getChildren(Web25ContentProvider.java:35)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getChildren(SafeDelegateTreeContentProvider.java:96)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$1.run(NavigatorContentServiceContentProvider.java:152)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.internalGetChildren(NavigatorContentServiceContentProvider.java:139)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getChildren(NavigatorContentServiceContentProvider.java:119)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider$1.run(JEE5ContentProvider.java:142)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:175)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:390)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.run(RefactoringWizardDialog2.java:331)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.internalPerformFinish(RefactoringWizard.java:637)
+	at org.eclipse.ltk.ui.refactoring.UserInputWizardPage.performFinish(UserInputWizardPage.java:153)
+	at org.eclipse.ltk.ui.refactoring.resource.DeleteResourcesWizard$DeleteResourcesRefactoringConfigurationPage.performFinish(DeleteResourcesWizard.java:202)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.performFinish(RefactoringWizard.java:710)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.okPressed(RefactoringWizardDialog2.java:455)
+	at org.eclipse.jface.dialogs.Dialog.buttonPressed(Dialog.java:466)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:619)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation$1.run(RefactoringWizardOpenOperation.java:187)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:202)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:122)
+	at org.eclipse.ltk.internal.ui.refactoring.actions.DeleteResourcesHandler.execute(DeleteResourcesHandler.java:40)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:94)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:619)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommandInContext(LegacyHandlerService.java:396)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.runCommand(LTKLauncher.java:95)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.openDeleteWizard(LTKLauncher.java:47)
+	at org.eclipse.ui.actions.DeleteResourceAction.run(DeleteResourceAction.java:474)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.DeleteAction.run(DeleteAction.java:197)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:275)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:251)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:94)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:619)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2014-10-25 18:42:33.828
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Could not delete '/LibertyCodeRallyVehicles/.settings'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(ResourceTree.java:387)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:837)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1987)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: C:\Users\Bill Bek\IBM\CodeRally\workspace\LibertyCodeRallyVehicles\.settings\org.eclipse.wst.common.component.
+Contains: Could not delete: C:\Users\Bill Bek\IBM\CodeRally\workspace\LibertyCodeRallyVehicles\.settings.
+Contains: Could not delete 'C:\Users\Bill Bek\IBM\CodeRally\workspace\LibertyCodeRallyVehicles'.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2014-10-25 18:42:33.828
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2014-10-25 18:42:33.828
+!MESSAGE Could not delete '/LibertyCodeRallyVehicles/.settings'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(ResourceTree.java:387)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:837)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1987)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: C:\Users\Bill Bek\IBM\CodeRally\workspace\LibertyCodeRallyVehicles\.settings\org.eclipse.wst.common.component.
+Contains: Could not delete: C:\Users\Bill Bek\IBM\CodeRally\workspace\LibertyCodeRallyVehicles\.settings.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2014-10-25 18:42:33.828
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2014-10-25 18:42:33.828
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2014-10-25 18:42:33.828
+!MESSAGE Could not delete: C:\Users\Bill Bek\IBM\CodeRally\workspace\LibertyCodeRallyVehicles\.settings\org.eclipse.wst.common.component.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2014-10-25 18:42:33.828
+!MESSAGE Could not delete: C:\Users\Bill Bek\IBM\CodeRally\workspace\LibertyCodeRallyVehicles\.settings.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2014-10-25 18:42:33.828
+!MESSAGE Could not delete 'C:\Users\Bill Bek\IBM\CodeRally\workspace\LibertyCodeRallyVehicles'.
+!SESSION 2014-10-25 19:02:16.503 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.fullversion=JRE 1.7.0 IBM J9 2.6 Windows 7 amd64-64 Compressed References 20140820_210490 (JIT enabled, AOT enabled)
+J9VM - R26_Java726_SR7_20140820_1356_B210490
+JIT  - r11.b06_20140409_61252.04
+GC   - R26_Java726_SR7_20140820_1356_B210490_CMPRSS
+J9CL - 20140820_210490
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-10-25 19:02:31.634
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Bill Bek'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-25 19:02:32.970
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin org.cloudfoundry.ide.eclipse.server.branding.
+
+!ENTRY org.eclipse.wst.validation 4 0 2014-10-25 19:09:53.931
+!MESSAGE Marker id 212 not found.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Marker id 212 not found.
+	at org.eclipse.core.internal.resources.Marker.checkInfo(Marker.java:57)
+	at org.eclipse.core.internal.resources.Marker.setAttribute(Marker.java:237)
+	at org.eclipse.core.internal.resources.Marker.setAttribute(Marker.java:223)
+	at org.eclipse.wst.validation.internal.TaskListUtility.getValidationTasks(TaskListUtility.java:255)
+	at org.eclipse.wst.validation.internal.TaskListUtility.getValidationTasks(TaskListUtility.java:285)
+	at org.eclipse.wst.validation.internal.TaskListUtility.getValidationTasks(TaskListUtility.java:330)
+	at org.eclipse.wst.validation.internal.TaskListUtility.removeTaskSubset(TaskListUtility.java:423)
+	at org.eclipse.wst.validation.internal.TaskListUtility.removeTaskSubset(TaskListUtility.java:411)
+	at org.eclipse.wst.validation.internal.operations.WorkbenchReporter.removeMessageSubset(WorkbenchReporter.java:184)
+	at org.eclipse.wst.validation.internal.operations.WorkbenchReporter.removeMessageSubset(WorkbenchReporter.java:179)
+	at org.eclipse.wst.validation.internal.InternalValidatorManager.removeOperationTasks(InternalValidatorManager.java:99)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.removeOldMessages(ValidationOperation.java:1056)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.launchJobs(ValidationOperation.java:1357)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.validate(ValidationOperation.java:835)
+	at org.eclipse.wst.validation.internal.operations.ValidationOperation.run(ValidationOperation.java:654)
+	at org.eclipse.wst.validation.internal.operations.ValidationBuilder.performFullBuild(ValidationBuilder.java:264)
+	at org.eclipse.wst.validation.internal.operations.ValidationBuilder.performFullBuild(ValidationBuilder.java:256)
+	at org.eclipse.wst.validation.internal.operations.ValidationBuilder.build(ValidationBuilder.java:182)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:401)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
+	at com.ibm.coderallyplugin.view.content.AIFileAgent.getAiClass(AIFileAgent.java:311)
+	at com.ibm.coderallyplugin.view.content.AIFileAgent.<init>(AIFileAgent.java:71)
+	at com.ibm.coderallyplugin.view.content.AIFileAgent.<init>(AIFileAgent.java:63)
+	at com.ibm.coderallyplugin.model.Vehicle.getAiFile(Vehicle.java:191)
+	at com.ibm.coderallyplugin.view.action.EnterRaceJob$4.run(EnterRaceAction.java:1017)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 376 2014-10-25 19:09:53.941
+!MESSAGE Marker id 212 not found.
+
+!ENTRY com.ibm.ws.st.core 4 0 2014-10-25 20:00:08.637
+!MESSAGE Failed to launch process
+!STACK 1
+org.eclipse.core.runtime.CoreException: Port 9080 required by WebSphere Application Server Liberty Profile at localhost is already in use. The server might be running in another process, or a system process might be using the port. To start this server you need to stop the other process or change the port numbers.
+	at com.ibm.ws.st.core.internal.WebSphereServerBehaviour.preLaunch(WebSphereServerBehaviour.java:710)
+	at com.ibm.ws.st.core.internal.launch.WebSphereLaunchConfigurationDelegate.launch(WebSphereLaunchConfigurationDelegate.java:499)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:883)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.ibm.ws.st.core 4 0 2014-10-25 20:00:08.637
+!MESSAGE Port 9080 required by WebSphere Application Server Liberty Profile at localhost is already in use. The server might be running in another process, or a system process might be using the port. To start this server you need to stop the other process or change the port numbers.
+
+!ENTRY com.ibm.ws.st.core 4 0 2014-10-25 20:00:08.637
+!MESSAGE Port 9080 required by WebSphere Application Server Liberty Profile at localhost is already in use. The server might be running in another process, or a system process might be using the port. To start this server you need to stop the other process or change the port numbers.
+
+!ENTRY com.ibm.coderally 4 0 2014-10-25 22:13:51.488
+!MESSAGE Unable to connect to server http://www.coderallycloud.com.
+
+!ENTRY org.eclipse.core.jobs 2 2 2014-10-25 23:02:56.821
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.wst.server.core.internal.Server$StopJob
+!SESSION 2014-10-26 09:27:44.388 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.fullversion=JRE 1.7.0 IBM J9 2.6 Windows 7 amd64-64 Compressed References 20140820_210490 (JIT enabled, AOT enabled)
+J9VM - R26_Java726_SR7_20140820_1356_B210490
+JIT  - r11.b06_20140409_61252.04
+GC   - R26_Java726_SR7_20140820_1356_B210490_CMPRSS
+J9CL - 20140820_210490
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-10-26 09:27:50.518
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-26 09:28:14.166
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin org.cloudfoundry.ide.eclipse.server.branding.
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-10-26 09:32:22.000
+!MESSAGE An internal error occurred during: "Waiting for race to end...".
+!STACK 0
+java.lang.NullPointerException
+	at com.ibm.coderallyplugin.view.WaitingForRaceToEndJob.run(Races.java:1092)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-10-26 09:34:01.001
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Bill Bek'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2014-10-26 09:54:01.816
+!MESSAGE Failed to get the classpath for the following project: CodeRallyShared (not open)
+!STACK 1
+Java Model Exception: Java Model Status [CodeRallyShared does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:534)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2344)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1909)
+	at org.eclipse.jdt.internal.core.JavaProject.getOutputLocation(JavaProject.java:1736)
+	at org.eclipse.jdt.apt.core.util.AptConfig.addProjectClasspath(AptConfig.java:344)
+	at org.eclipse.jdt.apt.core.util.AptConfig.addProjectClasspath(AptConfig.java:377)
+	at org.eclipse.jdt.apt.core.util.AptConfig.getProcessorOptions(AptConfig.java:236)
+	at org.eclipse.jdt.apt.core.internal.env.BaseProcessorEnv.initOptions(BaseProcessorEnv.java:171)
+	at org.eclipse.jdt.apt.core.internal.env.BaseProcessorEnv.<init>(BaseProcessorEnv.java:148)
+	at org.eclipse.jdt.apt.core.internal.env.AbstractCompilationEnv.<init>(AbstractCompilationEnv.java:136)
+	at org.eclipse.jdt.apt.core.internal.env.ReconcileEnv.<init>(ReconcileEnv.java:59)
+	at org.eclipse.jdt.apt.core.internal.env.ReconcileEnv.newEnv(ReconcileEnv.java:45)
+	at org.eclipse.jdt.apt.core.internal.env.AbstractCompilationEnv.newReconcileEnv(AbstractCompilationEnv.java:95)
+	at org.eclipse.jdt.apt.core.internal.APTDispatchRunnable.reconcile(APTDispatchRunnable.java:219)
+	at org.eclipse.jdt.apt.core.internal.APTDispatchRunnable.runAPTDuringReconcile(APTDispatchRunnable.java:167)
+	at org.eclipse.jdt.apt.core.internal.AptCompilationParticipant.reconcile(AptCompilationParticipant.java:223)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation$1.run(ReconcileWorkingCopyOperation.java:258)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.notifyParticipants(ReconcileWorkingCopyOperation.java:245)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:95)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1208)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslation.reconcileCompilationUnit(JSPTranslation.java:549)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.performValidation(JSPJavaValidator.java:335)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.performValidation(JSPBatchValidator.java:386)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validateFile(JSPBatchValidator.java:437)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator$2.run(JSPBatchValidator.java:515)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:528)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1159)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValManager$1.visit(ValManager.java:665)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:810)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:669)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:327)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2014-10-26 09:54:01.816
+!MESSAGE CodeRallyShared does not exist
+
+!ENTRY org.eclipse.jdt.apt.core 4 1 2014-10-26 09:54:02.046
+!MESSAGE Failed to get the classpath for the following project: CodeRallyShared (not open)
+!STACK 1
+Java Model Exception: Java Model Status [CodeRallyShared does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:534)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2344)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1909)
+	at org.eclipse.jdt.internal.core.JavaProject.getOutputLocation(JavaProject.java:1736)
+	at org.eclipse.jdt.apt.core.util.AptConfig.addProjectClasspath(AptConfig.java:344)
+	at org.eclipse.jdt.apt.core.util.AptConfig.addProjectClasspath(AptConfig.java:377)
+	at org.eclipse.jdt.apt.core.util.AptConfig.getProcessorOptions(AptConfig.java:236)
+	at org.eclipse.jdt.apt.core.internal.env.BaseProcessorEnv.initOptions(BaseProcessorEnv.java:171)
+	at org.eclipse.jdt.apt.core.internal.env.BaseProcessorEnv.<init>(BaseProcessorEnv.java:148)
+	at org.eclipse.jdt.apt.core.internal.env.AbstractCompilationEnv.<init>(AbstractCompilationEnv.java:136)
+	at org.eclipse.jdt.apt.core.internal.env.ReconcileEnv.<init>(ReconcileEnv.java:59)
+	at org.eclipse.jdt.apt.core.internal.env.ReconcileEnv.newEnv(ReconcileEnv.java:45)
+	at org.eclipse.jdt.apt.core.internal.env.AbstractCompilationEnv.newReconcileEnv(AbstractCompilationEnv.java:95)
+	at org.eclipse.jdt.apt.core.internal.APTDispatchRunnable.reconcile(APTDispatchRunnable.java:219)
+	at org.eclipse.jdt.apt.core.internal.APTDispatchRunnable.runAPTDuringReconcile(APTDispatchRunnable.java:167)
+	at org.eclipse.jdt.apt.core.internal.AptCompilationParticipant.reconcile(AptCompilationParticipant.java:223)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation$1.run(ReconcileWorkingCopyOperation.java:258)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.notifyParticipants(ReconcileWorkingCopyOperation.java:245)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:95)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1208)
+	at org.eclipse.jst.jsp.core.internal.java.JSPTranslation.reconcileCompilationUnit(JSPTranslation.java:549)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPJavaValidator.performValidation(JSPJavaValidator.java:335)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.performValidation(JSPBatchValidator.java:386)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validateFile(JSPBatchValidator.java:437)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator$2.run(JSPBatchValidator.java:515)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:528)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1159)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValManager$1.visit(ValManager.java:665)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:810)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:669)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:327)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2014-10-26 09:54:02.046
+!MESSAGE CodeRallyShared does not exist
+
+!ENTRY org.eclipse.debug.ui 4 0 2014-10-26 09:57:48.144
+!MESSAGE Launch shortcut 'com.ibm.etools.webtools.doh.launch.LaunchSingleFileShortcut' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.eclipse.core.resources.contentTypeId to type class org.eclipse.ui.part.FileEditorInput
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:29)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:150)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:72)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:53)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:281)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.isApplicable(ContextualLaunchAction.java:287)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.fillMenu(ContextualLaunchAction.java:218)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction$1.menuShown(ContextualLaunchAction.java:141)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:782)
+	at org.eclipse.jface.action.ActionContributionItem.copyMenu(ActionContributionItem.java:1276)
+	at org.eclipse.jface.action.ActionContributionItem.handleShowProxy(ActionContributionItem.java:1256)
+	at org.eclipse.jface.action.ActionContributionItem.access$4(ActionContributionItem.java:1245)
+	at org.eclipse.jface.action.ActionContributionItem$8.handleEvent(ActionContributionItem.java:1218)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4963)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4639)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:256)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4213)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3755)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:94)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:619)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2014-10-26 09:57:48.144
+!MESSAGE No property tester contributes a property org.eclipse.core.resources.contentTypeId to type class org.eclipse.ui.part.FileEditorInput
+
+!ENTRY com.ibm.ws.st.core 4 0 2014-10-26 10:03:30.293
+!MESSAGE Failed to launch process
+!STACK 1
+org.eclipse.core.runtime.CoreException: Port 9080 required by WebSphere Application Server Liberty Profile at localhost is already in use. The server might be running in another process, or a system process might be using the port. To start this server you need to stop the other process or change the port numbers.
+	at com.ibm.ws.st.core.internal.WebSphereServerBehaviour.preLaunch(WebSphereServerBehaviour.java:710)
+	at com.ibm.ws.st.core.internal.launch.WebSphereLaunchConfigurationDelegate.launch(WebSphereLaunchConfigurationDelegate.java:499)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:883)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 com.ibm.ws.st.core 4 0 2014-10-26 10:03:30.293
+!MESSAGE Port 9080 required by WebSphere Application Server Liberty Profile at localhost is already in use. The server might be running in another process, or a system process might be using the port. To start this server you need to stop the other process or change the port numbers.
+
+!ENTRY com.ibm.ws.st.core 4 0 2014-10-26 10:03:30.293
+!MESSAGE Port 9080 required by WebSphere Application Server Liberty Profile at localhost is already in use. The server might be running in another process, or a system process might be using the port. To start this server you need to stop the other process or change the port numbers.
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-10-26 15:08:07.357
+!MESSAGE An internal error occurred during: "Waiting for race to end...".
+!STACK 0
+java.lang.NullPointerException
+	at com.ibm.coderallyplugin.view.WaitingForRaceToEndJob.run(Races.java:1092)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-10-26 15:08:09.609
+!MESSAGE An internal error occurred during: "Waiting for race to end...".
+!STACK 0
+java.lang.NullPointerException
+	at com.ibm.coderallyplugin.view.WaitingForRaceToEndJob.run(Races.java:1092)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.ibm.coderally 4 0 2014-10-26 15:09:33.376
+!MESSAGE Unable to connect to server http://www.coderallycloud.com.
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-10-26 16:22:34.779
+!MESSAGE An internal error occurred during: "Waiting for race to end...".
+!STACK 0
+java.lang.NullPointerException
+	at com.ibm.coderallyplugin.view.WaitingForRaceToEndJob.run(Races.java:1092)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 2 2 2014-10-26 16:47:19.415
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.wst.server.core.internal.Server$StopJob
+!SESSION 2014-10-27 20:46:33.282 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.fullversion=JRE 1.7.0 IBM J9 2.6 Windows 7 amd64-64 Compressed References 20140820_210490 (JIT enabled, AOT enabled)
+J9VM - R26_Java726_SR7_20140820_1356_B210490
+JIT  - r11.b06_20140409_61252.04
+GC   - R26_Java726_SR7_20140820_1356_B210490_CMPRSS
+J9CL - 20140820_210490
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-10-27 20:47:45.531
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Bill Bek'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-27 20:49:02.840
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin org.cloudfoundry.ide.eclipse.server.branding.

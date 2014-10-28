@@ -1,0 +1,13 @@
+{
+   "name":"clip",
+   "scale":"0.3",
+   "images":[
+      "/obstacles/clip/clip.png"
+   ],
+   "type":"aabb",
+   "placement":[
+       {"x_offset":"-20", "y_offset":"-20"},
+       {"x_offset":"20", "y_offset":"-20"},
+       {"x_offset":"0", "y_offset":"20"}
+   ]
+}

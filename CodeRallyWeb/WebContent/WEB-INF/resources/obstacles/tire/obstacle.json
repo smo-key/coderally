@@ -1,0 +1,14 @@
+{
+   "name":"tire",
+   "scale":"1.0",
+   "images":[
+      "/obstacles/tire/tire1.png",
+      "/obstacles/tire/tire2.png"
+   ],
+   "type":"tire",
+   "placement":[
+       {"x_offset":"-15", "y_offset":"-15"},
+       {"x_offset":"15", "y_offset":"-15"},
+       {"x_offset":"0", "y_offset":"15"}
+   ]
+}

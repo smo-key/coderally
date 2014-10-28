@@ -1,0 +1,11 @@
+{
+   "name":"vortex",
+   "scale":"0.3",
+   "images":[
+      "/obstacles/vortex/vortex.png"
+   ],
+   "type":"vortex",
+   "placement":[
+       {"x_offset":"0", "y_offset":"0"}
+   ]
+}

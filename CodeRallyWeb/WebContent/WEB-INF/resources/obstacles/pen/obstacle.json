@@ -1,0 +1,14 @@
+{
+   "name":"pen",
+   "scale":"1.1",
+   "images":[
+      "/obstacles/pen/blue_pen.png",
+      "/obstacles/pen/red_pen.png",
+	  "/obstacles/pen/green_highlighter.png",
+	  "/obstacles/pen/pencil.png"
+   ],
+   "type":"aabb",
+   "placement":[
+       {"x_offset":"0", "y_offset":"0"}
+   ]
+}

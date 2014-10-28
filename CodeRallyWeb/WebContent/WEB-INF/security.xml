@@ -1,0 +1,45 @@
+<security>
+	<!-- You can use plain strings or regex inside of values -->
+	<string value="System\.exit">System exit calls are not allowed</string>
+	<string value="import static java\.lang\.System">Static imports of the System class are not allowed</string>
+	<string value="java\.lang\.System">Imports of the System class are not allowed</string>
+	<string value="System\.gc">Garbage collector access is not allowed</string>
+	<string value="System\.getSecurityManager">Security Manager access is not allowed</string>
+	<string value="System\.setSecurityManager">Security Manager access is not allowed</string>
+	<string value="System\.load">Native library access is forbidden</string>
+	<string value="System\.load">Native library access is forbidden</string>
+	<string value="System\.mapLibraryName">Native library access is forbidden</string>
+	<string value="System\.runFinalization">Finalization is forbidden</string>
+	<string value="System\.runFinalizersOnExit">Finalization is forbidden</string>
+	<string value="System\.set(Err|Out|In)">Setting output is not allowed</string>
+	<string value="System\.setPropert(ies|y)">Setting properties is not allowed</string>
+	<string value="System\.setPropert(ies|y)">Setting properties is not allowed</string>
+	<string value="java\.io">Java IO access is not allowed</string>
+	<string value="java\.nio">Java IO access is not allowed</string>
+	<string value="java\.reflect">Reflection is not allowed</string>
+	<string value="java\.lang\.reflect">Reflection is not allowed</string>	
+	<string value="(java\.lang\.|)ClassLoader">ClassLoader access is forbidden</string>
+	<string value="java\.lang\.runtime">Java runtime access is not allowed</string>
+	<string value="org\.omg">org.omg corba is not allowed</string>
+	<string value="javax\.swing">Javax swing access is not allowed (your AI doesn't need a GUI)</string>
+	<string value="javax\.naming">Javax naming is not allowed</string>
+	<string value="javax\.accessibility">Javax accessibility is not allowed</string>
+	<string value="java\.rmi">Java rmi is not allowed</string>
+	<string value="java\.awt">Java awt is not allowed (your AI doesn't need a GUI)</string>
+	<string value="java\.text">Java text is not allowed</string>
+	<string value="java\.security">Java security access is forbidden</string>
+	<string value="java\.sql">Java sql access is forbidden</string>
+	<string value="javax\.tools">Java tools access is forbidden</string>
+	<string value="java\.net">Java network access is forbidden</string>
+	<string value="(java\.lang\.|)Thread">Threading is forbidden</string>
+	<string value="new String">String constructor access is forbidden</string>
+	<string value="\.class">Class references are not allowed</string>
+	<string value="Class">Class references are not allowed</string>
+	<string value="getClass()">Class references are not allowed</string>
+	<string value=" \\\\u">You aren't allowed to use unicode. We found "\u" in your code, which could be unicode</string>
+	<string value=" \\\\0">You aren't allowed to use unicode. We found "\0" in your code, which could be unicode</string>
+	<string value="while\\(true\\)">A while(true) is an infinite loop. Please do not enter infinite loops as part of your AI</string>
+	<string value="while \\(true\\)">A while (true) is an infinite loop. Please do not enter infinite loops as part of your AI</string>
+	<string value="com.ibm.coderally.entity.cars.RaceCar">For security purposes you are not allowed to directly reference RaceCar. If this causes any problems please tell us in the code rally forums at http://ibm.co/coderally</string>
+	<string value="com\.sun">You cannot use any com.sun classes as this presents a security vulnerability in advanced AIs. Please use an Agent AI if you would like to include any code in your AI.</string> 
+</security>

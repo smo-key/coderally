@@ -1,0 +1,8 @@
+{
+   "name": "monarch_butterfly",
+   "acceleration":"100",
+   "weight":"500",
+   "armor":"100",
+   "traction":"100",
+   "turning":"1000"
+}

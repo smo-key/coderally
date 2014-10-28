@@ -1,0 +1,16 @@
+{
+   "name":"smoke",
+   "surface":"com.ibm.coderally.track.surface.types.SmokeSurface",
+   "scale":"1.5",
+   "images":[
+      "/obstacles/smoke/smoke1.png",
+      "/obstacles/smoke/smoke2.png",
+      "/obstacles/smoke/smoke3.png",
+      "/obstacles/smoke/smoke4.png",
+      "/obstacles/smoke/smoke5.png"
+   ],
+   "type":"soft",
+   "placement":[
+       {"x_offset":"0", "y_offset":"0"}
+   ]
+}

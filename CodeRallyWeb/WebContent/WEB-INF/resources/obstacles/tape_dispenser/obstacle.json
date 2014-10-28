@@ -1,0 +1,11 @@
+{
+   "name":"tape_dispenser",
+   "scale":"1.3",
+   "images":[
+      "/obstacles/tape_dispenser/tape_dispenser.png"
+   ],
+   "type":"aabb",
+   "placement":[
+       {"x_offset":"0", "y_offset":"0"}
+   ]
+}
