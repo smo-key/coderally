@@ -1376,3 +1376,12 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.wst.common.project.facet.core 4 0 2014-10-27 20:49:02.840
 !MESSAGE Project facet grails.app has not been defined. It is used in plugin org.cloudfoundry.ide.eclipse.server.branding.
+
+!ENTRY com.ibm.coderally 4 0 2014-10-27 22:32:36.953
+!MESSAGE Unable to connect to server http://www.coderallycloud.com.
+
+!ENTRY com.ibm.coderally 4 0 2014-10-27 22:36:31.095
+!MESSAGE Unable to connect to server http://www.coderallycloud.com.
+
+!ENTRY org.eclipse.core.jobs 2 2 2014-10-27 22:39:35.371
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.wst.server.core.internal.Server$StopJob

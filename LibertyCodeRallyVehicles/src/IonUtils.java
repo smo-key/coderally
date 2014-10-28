@@ -132,10 +132,10 @@ public class IonUtils {
 			mCar.setAccelerationPercent(0);
 			mCar.setBrakePercent(0);
 		} else if  (predictedTurn * 1.5 < turn) {
-			mCar.setAccelerationPercent(20);
+			mCar.setAccelerationPercent(40);
 			mCar.setBrakePercent(0);
 		} else if  (predictedTurn < turn) {
-			mCar.setAccelerationPercent(70);
+			mCar.setAccelerationPercent(80);
 			mCar.setBrakePercent(0);
 		} else {
 			mCar.setAccelerationPercent(100);

@@ -11,4 +11,5 @@
 <fullyQualifiedTypeName name="com.ibm.coderally.geo.agent.Point"/>
 <fullyQualifiedTypeName name="com.ibm.coderally.geo.agent.Rotation"/>
 <fullyQualifiedTypeName name="com.ibm.coderally.track.agent.Track"/>
+<fullyQualifiedTypeName name="IonUtils.RaceStrategy"/>
 </qualifiedTypeNameHistroy>
