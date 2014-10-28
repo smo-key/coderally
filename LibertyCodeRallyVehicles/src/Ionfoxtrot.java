@@ -93,7 +93,7 @@ public class Ionfoxtrot extends DefaultCarAIAgent {
 		//recalculate speed from a heading of four checkpoints away
 		IonUtils.recalculateHeading(getCar(), IonUtils.getClosestLane(
 				IonUtils.getNextCheckpoint(track, cp, 4), 
-				pos), 0.8); //higher bias, faster turns
+				pos), 0.8D); //higher bias, faster turns
 		
 		return cp;
 	}
@@ -114,25 +114,27 @@ public class Ionfoxtrot extends DefaultCarAIAgent {
 		// TODO Add all opponents to a list, check if already exist then add
 		// Every frame, check if path intersects with them
 		
+		// TODO If intersects, move away using avoidTarget()
+		
 		Point pos = getCar().getPosition();
 		CheckPoint cp = getCheckpointTarget();
 		Point target = IonUtils.getClosestLane(cp, pos);
 		
 		avoiditem = car;
 		getCar().setTarget(IonUtils.avoidTarget(getCar(), cp, avoiditem));
-		IonUtils.recalculateHeading(getCar(), target, 0.5D);
+		IonUtils.recalculateHeading(getCar(), target, 0.8D);
 	}
 	
 	@Override
 	public void onObstacleInProximity(Obstacle obstacle) {
-		/*Point pos = getCar().getPosition();
+		Point pos = getCar().getPosition();
 		CheckPoint cp = getCheckpointTarget();
 		Point target = IonUtils.getClosestLane(cp, pos);
 		
 		avoiditem = obstacle;
 		getCar().setTarget(IonUtils.avoidTarget(getCar(), cp, avoiditem));
 		// 0.5 bias to force the car to turn sharply to avoid
-		IonUtils.recalculateHeading(getCar(), target, 0.5D);*/
+		IonUtils.recalculateHeading(getCar(), target, 0.25D);
 	}
 	
 	@Override
