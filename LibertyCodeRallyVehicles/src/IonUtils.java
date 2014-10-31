@@ -95,6 +95,12 @@ public class IonUtils {
 		return target;
 	}
 	
+	public static double getDistance(Point a, Point b)
+	{
+		return Math.sqrt(((b.getX() - a.getX())*(b.getX() - a.getX())) + 
+						 ((b.getY() - a.getY())*(b.getY() - a.getY())));
+	}
+	
 	public static void recalculateHeading(Car mCar, Point target, double bias) {
 		
 		//Predicts how far the car can turn in 1 second

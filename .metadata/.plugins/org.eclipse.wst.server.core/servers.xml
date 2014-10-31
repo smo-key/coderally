@@ -4,7 +4,7 @@
   <server auto-publish-setting="1" hostname="Cloud" id="Bluemix" name="Bluemix" org.cloudfoundry.ide.eclipse.org="pachachura.arthur@gmail.com" org.cloudfoundry.ide.eclipse.serverId="pachachura.arthur@gmail.com_pachachura.arthur@gmail.com_dev@https://api.ng.bluemix.net" org.cloudfoundry.ide.eclipse.space="dev" org.cloudfoundry.ide.eclipse.url="https://api.ng.bluemix.net" org.cloudfoundry.ide.eclipse.username="pachachura.arthur@gmail.com" runtime-id="Bluemix" server-type="com.ibm.cftools.server" server-type-id="com.ibm.cftools.server" start-timeout="600" stop-timeout="60" timestamp="22">
     <list key="modules" value0="LibertyCodeRallyVehicles::org.eclipse.jst.jee.server:LibertyCodeRallyVehicles::jst.web::2.5"/>
   </server>
-  <server auto-publish-setting="2" auto-publish-time="1" hostname="localhost" id="WebSphere Application Server Liberty Profile at localhost" looseConfig="true" name="WebSphere Application Server Liberty Profile at localhost" runtime-id="WebSphere Application Server Liberty Profile" server-type="com.ibm.ws.st.server.wlp" server-type-id="com.ibm.ws.st.server.wlp" serverName="defaultServer" start-timeout="60" stop-timeout="15" timestamp="19">
+  <server auto-publish-setting="2" auto-publish-time="1" hostname="localhost" id="WebSphere Application Server Liberty Profile at localhost" looseConfig="true" name="WebSphere Application Server Liberty Profile at localhost" runtime-id="WebSphere Application Server Liberty Profile" server-type="com.ibm.ws.st.server.wlp" server-type-id="com.ibm.ws.st.server.wlp" serverName="defaultServer" start-timeout="60" stop-timeout="15" timestamp="26">
     <list key="modules" value0="LibertyCodeRallyVehicles::org.eclipse.jst.jee.server:LibertyCodeRallyVehicles::jst.web::2.5"/>
   </server>
 </servers>
