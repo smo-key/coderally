@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<archive>
-    <dir sourceOnDisk="C:\Users\Bill Bek\IBM\CodeRally\workspace\LibertyCodeRallyVehicles\WebContent" targetInArchive="/"/>
-    <dir sourceOnDisk="C:\Users\Bill Bek\IBM\CodeRally\workspace\LibertyCodeRallyVehicles\WebContent\WEB-INF\classes" targetInArchive="/WEB-INF/classes"/>
-</archive>

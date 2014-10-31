@@ -80,33 +80,26 @@ public class Ionfoxtrot extends DefaultCarAIAgent {
 		// TODO Test if can still reach all other checkpoints so you don't go in circles
 		
 		// Move toward next points to calculate speed
-		if (Math.sqrt(IonUtils.cpdist(pos, rot, cp)) < 170)
+		if (Math.sqrt(IonUtils.cpdist(pos, rot, cp)) < 140)
 		{
-			if (Math.sqrt(IonUtils.cpdist(pos, rot, cp)) < 90)
+			if (Math.sqrt(IonUtils.cpdist(pos, rot, cp)) < 80)
 			{
-				if (Math.sqrt(IonUtils.cpdist(pos, rot, cp)) < 60)
-				{
-					//turn somewhat toward next checkpoint if current is within reach
-					cp = IonUtils.getNextCheckpoint(track, cp, 3);
-				}
-				else
-				{
-					//turn somewhat toward next checkpoint if current is within reach
-					cp = IonUtils.getNextCheckpoint(track, cp, 2);
-				}
+				//turn somewhat toward next checkpoint if current is within reach
+				cp = IonUtils.getNextCheckpoint(track, cp, 2);
+				//target = IonUtils.getClosestLane(cp, pos);
 			}
 			else
 			{
 				//turn somewhat toward next checkpoint if current is within reach
-				cp = IonUtils.getNextCheckpoint(track, cp, 1);
+				cp = IonUtils.getNextCheckpoint(track, cp, 3);
 				//target = IonUtils.getClosestLane(cp, pos);
 			}
 		}
 		
 		//recalculate speed from a heading of four checkpoints away
 		IonUtils.recalculateHeading(getCar(), IonUtils.getClosestLane(
-				IonUtils.getNextCheckpoint(track, cp, 4), 
-				pos), 0.8); //higher bias, faster turns
+				IonUtils.getNextCheckpoint(track, getCar().getCheckpoint(), 4), 
+				pos), 1.6D); //higher bias, faster turns
 		
 		return cp;
 	}
@@ -135,7 +128,7 @@ public class Ionfoxtrot extends DefaultCarAIAgent {
 		
 		avoiditem = car;
 		getCar().setTarget(IonUtils.avoidTarget(getCar(), cp, avoiditem));
-		IonUtils.recalculateHeading(getCar(), target, 0.5D);
+		IonUtils.recalculateHeading(getCar(), target, 2.0D);
 	}
 	
 	@Override

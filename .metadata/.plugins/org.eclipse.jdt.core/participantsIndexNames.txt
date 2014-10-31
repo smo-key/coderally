@@ -1,7 +1,5 @@
 INDEX VERSION 1.127
-C:\Users\Bill Bek\IBM\CodeRally\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3461898843.index
-\com.ibm.coderally\src
-C:\Users\Bill Bek\IBM\CodeRally\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4005633564.index
-\CodeRallyWeb\src
-C:\Users\Bill Bek\IBM\CodeRally\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2873949352.index
+C:\Users\S2062710\coderally\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2873949352.index
 \LibertyCodeRallyVehicles\src
+C:\Users\S2062710\coderally\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4005633564.index
+\CodeRallyWeb\.apt_generated

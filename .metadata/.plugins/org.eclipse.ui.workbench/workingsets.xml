@@ -4,7 +4,6 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Code Rally Vehicles" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/CodeRallyStandalone" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/RemoteSystemsTempFiles" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/WebSphere Application Server Liberty Profile" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/com.ibm.coderally" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/com.ibm.coderally.bluemix" type="4"/>
 </workingSet>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?> 
-<featureInfo name="core" location="C:\Program Files\IBM\CodeRally\wlp"> 
+<featureInfo name="core" location="C:\Users\S2062710\IBM\CodeRally\wlp"> 
     <protectedFeature> 
         <symbolicName>com.ibm.websphere.appserver.appLifecycle-1.0</symbolicName> 
         <spiPackage>com.ibm.wsspi.application.lifecycle</spiPackage> 
@@ -1325,4 +1325,4 @@
     <protectedFeature> 
         <symbolicName>com.ibm.wsspi.appserver.webBundleSecurity-1.0</symbolicName> 
     </protectedFeature> 
-</featureInfo> 
+</featureInfo>

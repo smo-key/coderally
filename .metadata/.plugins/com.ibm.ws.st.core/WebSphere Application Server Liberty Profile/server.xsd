@@ -1566,9 +1566,9 @@
                     </xsd:appinfo> 
                 </xsd:annotation> 
             </xsd:element> 
-            <xsd:element name="securityContext" type="com.ibm.ws.security.context"> 
-            </xsd:element> 
             <xsd:element name="jeeMetadataContext" type="com.ibm.ws.javaee.metadata.context"> 
+            </xsd:element> 
+            <xsd:element name="securityContext" type="com.ibm.ws.security.context"> 
             </xsd:element> 
             <xsd:element name="classloaderContext" type="com.ibm.ws.classloader.context"> 
             </xsd:element> 
@@ -2266,9 +2266,9 @@
                     </xsd:appinfo> 
                 </xsd:annotation> 
             </xsd:element> 
-            <xsd:element name="diskCache" type="com.ibm.ws.cache.disk"> 
-            </xsd:element> 
             <xsd:element name="cacheGroup" type="com.ibm.ws.cache.cacheGroup"> 
+            </xsd:element> 
+            <xsd:element name="diskCache" type="com.ibm.ws.cache.disk"> 
             </xsd:element> 
         </xsd:choice> 
         <xsd:attribute name="jndiName" use="optional" default="${id}" type="xsd:string"> 
@@ -10526,29 +10526,29 @@
                     </xsd:appinfo> 
                 </xsd:annotation> 
             </xsd:element> 
-            <xsd:element name="properties.db2.jcc" type="com.ibm.ws.jdbc.dataSource.properties.db2.jcc"> 
-            </xsd:element> 
-            <xsd:element name="properties.db2.i.native" type="com.ibm.ws.jdbc.dataSource.properties.db2.i.native"> 
-            </xsd:element> 
-            <xsd:element name="properties.derby.client" type="com.ibm.ws.jdbc.dataSource.properties.derby.client"> 
-            </xsd:element> 
-            <xsd:element name="properties.informix.jcc" type="com.ibm.ws.jdbc.dataSource.properties.informix.jcc"> 
-            </xsd:element> 
-            <xsd:element name="properties.informix" type="com.ibm.ws.jdbc.dataSource.properties.informix"> 
-            </xsd:element> 
-            <xsd:element name="properties.datadirect.sqlserver" type="com.ibm.ws.jdbc.dataSource.properties.datadirect.sqlserver"> 
-            </xsd:element> 
             <xsd:element name="properties.microsoft.sqlserver" type="com.ibm.ws.jdbc.dataSource.properties.microsoft.sqlserver"> 
             </xsd:element> 
             <xsd:element name="properties.oracle" type="com.ibm.ws.jdbc.dataSource.properties.oracle"> 
+            </xsd:element> 
+            <xsd:element name="properties.informix" type="com.ibm.ws.jdbc.dataSource.properties.informix"> 
             </xsd:element> 
             <xsd:element name="properties.db2.i.toolbox" type="com.ibm.ws.jdbc.dataSource.properties.db2.i.toolbox"> 
             </xsd:element> 
             <xsd:element name="properties.sybase" type="com.ibm.ws.jdbc.dataSource.properties.sybase"> 
             </xsd:element> 
-            <xsd:element name="properties.derby.embedded" type="com.ibm.ws.jdbc.dataSource.properties.derby.embedded"> 
+            <xsd:element name="properties.datadirect.sqlserver" type="com.ibm.ws.jdbc.dataSource.properties.datadirect.sqlserver"> 
             </xsd:element> 
             <xsd:element name="properties" type="com.ibm.ws.jdbc.dataSource.properties"> 
+            </xsd:element> 
+            <xsd:element name="properties.informix.jcc" type="com.ibm.ws.jdbc.dataSource.properties.informix.jcc"> 
+            </xsd:element> 
+            <xsd:element name="properties.derby.embedded" type="com.ibm.ws.jdbc.dataSource.properties.derby.embedded"> 
+            </xsd:element> 
+            <xsd:element name="properties.db2.jcc" type="com.ibm.ws.jdbc.dataSource.properties.db2.jcc"> 
+            </xsd:element> 
+            <xsd:element name="properties.derby.client" type="com.ibm.ws.jdbc.dataSource.properties.derby.client"> 
+            </xsd:element> 
+            <xsd:element name="properties.db2.i.native" type="com.ibm.ws.jdbc.dataSource.properties.db2.i.native"> 
             </xsd:element> 
         </xsd:choice> 
         <xsd:attribute name="jndiName" use="optional" type="xsd:string"> 
