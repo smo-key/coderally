@@ -1,3 +1,4 @@
-GitRepositoriesView.GitDirectories=C\:\\source\\git\\coderally\\.git;
-RepositorySearchDialogSearchPath=C\:\\source\\git\\coderally
+GitRepositoriesView.GitDirectories=C\:\\Users\\S2062710\\coderally\\.git;
+RepositorySearchDialogDeepSearch=false
+RepositorySearchDialogSearchPath=C\:\\Users\\S2062710\\coderally
 eclipse.preferences.version=1

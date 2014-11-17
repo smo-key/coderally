@@ -83,37 +83,32 @@ public class Ionfoxtrot extends DefaultCarAIAgent {
 		// TODO Test if can still reach all other checkpoints so you don't go in circles		
 		
 		// Move toward next points to calculate speed
-		if (Math.sqrt(IonUtils.cpdist(pos, rot, cp)) < 140)
+		if (Math.sqrt(IonUtils.cpdist(pos, rot, cp)) < 80)
 		{
-			if (Math.sqrt(IonUtils.cpdist(pos, rot, cp)) < 80)
+			if (Math.sqrt(IonUtils.cpdist(pos, rot, cp)) < 60)
 			{
 				//turn somewhat toward next checkpoint if current is within reach
-				cp = IonUtils.getNextCheckpoint(track, cp, 3);
-			}
-			else
-			{
-				//turn somewhat toward next checkpoint if current is within reach
-				cp = IonUtils.getNextCheckpoint(track, cp, 2);
+				cp = IonUtils.getNextCheckpoint(track, cp, 1);
 			}
 		}
 		target = IonUtils.getClosestLane(cp, pos);
 		
 		//see if you're near an opponent and avoid them
-		Car closest = null;
+		/*Car closest = null;
 		double closestd = Double.POSITIVE_INFINITY;
 		for (Car car : avoidcars)
 		{
 			double d = IonUtils.getDistance(car.getPosition(), pos);
-			if (d < closestd) { closestd = d;  closest = car; }
+			if ((d < closestd) && (d < 60)) { closestd = d;  closest = car; }
 		}
 		
-		if (closest != null) { target = IonUtils.avoidTarget(getCar(), getCar().getCheckpoint(), (Entity)(closest)); }
+		if (closest != null) { target = IonUtils.avoidTarget(getCar(), getCar().getCheckpoint(), closest); }*/
 		
 		//recalculate speed from a heading of four checkpoints away
 		getCar().setTarget(target);
 		IonUtils.recalculateHeading(getCar(), IonUtils.getClosestLane(
-				IonUtils.getNextCheckpoint(track, getCar().getCheckpoint(), 4), 
-				pos), 1.6D); //higher bias, faster turns
+				IonUtils.getNextCheckpoint(track, getCar().getCheckpoint(), 3), 
+				pos), 0.9D); //higher bias, faster turns
 		
 		return cp;
 	}

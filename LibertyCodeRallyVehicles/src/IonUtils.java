@@ -53,6 +53,25 @@ public class IonUtils {
 		}
 	}
 	
+	public static Point getAlternativeLane(CheckPoint point, Point pos) {
+		//Factors in only position
+		//How about rotation?
+		Point startMid = point.getCenter().midpoint(point.getStart());
+		Point endMid = point.getCenter().midpoint(point.getEnd());
+
+		if (pos.getDistanceSquared(endMid) < pos.getDistanceSquared(startMid)) {
+			if (pos.getDistanceSquared(point.getCenter()) < pos.getDistanceSquared(endMid)) {
+				return point.getCenter();
+			} else {
+				return startMid;
+			}
+		} else if (pos.getDistanceSquared(point.getCenter()) < pos.getDistanceSquared(startMid)) {
+			return point.getCenter();
+		} else {
+			return endMid;
+		}
+	}
+	
 	/** Get a moving "average" based on the list of checkpoints **/
 	public static CheckPoint getNextCheckpoint(Track track, CheckPoint p, int getnexttimes) {
 		int index = 0;
@@ -74,7 +93,7 @@ public class IonUtils {
 		return track.getCheckpoints().get(index);
 	}
 	
-	public static Point avoidTarget(Car car, CheckPoint point, Entity entity) {
+	public static Point avoidTarget(Car car, CheckPoint point, Car entity) {
 		Point target;
 		//Find the closer target
 		if (point.getEnd().getDistanceSquared(entity.getPosition()) < point.getStart().getDistanceSquared(entity.getPosition())) {
@@ -92,6 +111,7 @@ public class IonUtils {
 				target = point.getEnd();
 			}
 		}
+		
 		return target;
 	}
 	
@@ -143,12 +163,12 @@ public class IonUtils {
 			mCar.setAccelerationPercent(0);
 		} else if (predictedTurn * 2 < turn) {
 			mCar.setAccelerationPercent(0);
-			mCar.setBrakePercent(0);
+			mCar.setBrakePercent(10);
 		} else if  (predictedTurn * 1.5 < turn) {
-			mCar.setAccelerationPercent(20);
+			mCar.setAccelerationPercent(0);
 			mCar.setBrakePercent(0);
 		} else if  (predictedTurn < turn) {
-			mCar.setAccelerationPercent(50);
+			mCar.setAccelerationPercent(20);
 			mCar.setBrakePercent(0);
 		} else {
 			mCar.setAccelerationPercent(100);
